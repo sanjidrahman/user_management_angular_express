@@ -2,6 +2,7 @@ const dbConfig = require('../config/configDB')
 const { Sequelize, DataTypes } = require("sequelize");
 const UsersModel = require('./user');
 
+// mysql sequelize connection
 const sequelize = new Sequelize(
     dbConfig.DATABASE,
     dbConfig.USER,
@@ -12,6 +13,7 @@ const sequelize = new Sequelize(
     }
 );
 
+// connection of schema with sequelize
 const db = {
     Sequelize,
     models: {

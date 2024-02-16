@@ -1,5 +1,3 @@
-const db = require('../models/index.js')
-const User = db.models
 const jwt = require('jsonwebtoken')
 
 const auth = async (req, res, next) => {

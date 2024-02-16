@@ -1,9 +1,16 @@
+// user schema
 const UsersModel = (sequelize, { DataTypes }) => {
     const Users = sequelize.define("User", {
         id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             allowNull: false,
+            autoIncrement: true
+        },
+
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
 
         email: {
@@ -17,8 +24,9 @@ const UsersModel = (sequelize, { DataTypes }) => {
         },
 
         isVerified: {
-            type: DataTypes.STRING,
+            type: DataTypes.BOOLEAN,
             allowNull: false,
+            defaultValue: false
         },
     });
 

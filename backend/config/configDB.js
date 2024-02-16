@@ -1,3 +1,4 @@
+// DB configurations
 const dbConfig = {
     HOST: "localhost",
     USER: "sanjid",
