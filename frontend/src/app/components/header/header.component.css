@@ -1,0 +1,23 @@
+.btn.btn-success {
+    background-color: #ffc107; 
+    color: #000000; 
+    border-color: #ffc107; 
+    padding: 7px 20px; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+.btn.btn-success:hover {
+    background-color: #ffc107; 
+    border-color: #ffc107; 
+    color: #fff; 
+}
+
+.navbar{
+    background-color: white;
+}
+
+.account {
+    text-decoration: none;
+    cursor: pointer;
+}
